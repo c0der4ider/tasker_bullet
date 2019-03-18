@@ -32,7 +32,7 @@ config/master.key
 /vendor/bundle
 
 # these should all be checked in to normalize the environment:
-Gemfile.lock, .ruby-version, .ruby-gemset
+# Gemfile.lock, .ruby-version, .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
@@ -110,6 +110,20 @@ yarn-debug.log*
 /spec/reports/
 /test/tmp/
 /test/version_tmp/
+
+/.directory
+/**/.DS_Store
+/public/system/**
+/public/images/**
+/**/.directory
+/config/database.yml
+!/*/ruby-gemset
+/.ruby-gemset
+/.rvmrc
+
+.ruby-version
+/config/s3.yml
+/.byebug_history
 
 # scm revert files
 **.orig
